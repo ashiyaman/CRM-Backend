@@ -20,6 +20,8 @@ const commentSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,  // Automatically set the creation time
   }
+},{
+  timestamps: true,
 });
 
 module.exports = mongoose.model('Comment', commentSchema);
